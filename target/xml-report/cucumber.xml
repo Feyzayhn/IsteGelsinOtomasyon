@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="36.366">
+    <testcase classname="Iste gelsin login olup sepete urun ekleme" name="Iste gelsin login olup sepete urun ekleme" time="36.16">
+        <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: MicrosoftEdge=109.0.1518.55)&#10;Build info: version: '4.7.1', revision: 'c6795baf1a3'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Command: [19f9ddfa26d7732849318d8bfb99a959, findElement {using=xpath, value=//*[.='Alışverişe Başla']}]&#10;Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 109.0.1518.55, ms:edgeOptions: {debuggerAddress: localhost:54058}, msedge: {msedgedriverVersion: 109.0.1518.55 (354a05280ee6..., userDataDir: C:\Users\feyza2\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54058/devtoo..., se:cdpVersion: 109.0.1518.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 19f9ddfa26d7732849318d8bfb99a959" type="org.openqa.selenium.NoSuchWindowException">
+            <![CDATA[Given Kullanici "url" gider.................................................passed
+Then Kullanici Giris yap veya Uye ol butonunun gorunur oldugunu dogrular ve butona  tiklar.passed
+Then Kullanici hoş geldin ve sms onayi metninin gorunur oldugunu dogrular...passed
+Then Kullanici telefon numarasi alaninin "+90 " olarak default geldigini dogrular.passed
+Then Kullanici telefon  numarasini girer ve devam et butonuna tiklar........passed
+Then Kullanici otp ekraninin açıldigini dogrular ve otp dogru girilir.......passed
+Then Kullanici alisverise basla butonuna tiklar.............................failed
+Then Kullanici arama kutusuna istedigi bir urun ismini girer................skipped
+Then Kullanici onerilen siralamalardan fiyati artana gore secenegini secer..skipped
+And Kullanici fiyati en dusuk olan urunu sepete ekler ve sepete ekledigini dogrular.skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=109.0.1518.55)
+Build info: version: '4.7.1', revision: 'c6795baf1a3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [19f9ddfa26d7732849318d8bfb99a959, findElement {using=xpath, value=//*[.='Alışverişe Başla']}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 109.0.1518.55, ms:edgeOptions: {debuggerAddress: localhost:54058}, msedge: {msedgedriverVersion: 109.0.1518.55 (354a05280ee6..., userDataDir: C:\Users\feyza2\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54058/devtoo..., se:cdpVersion: 109.0.1518.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 19f9ddfa26d7732849318d8bfb99a959
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy23.click(Unknown Source)
+	at stepDefinitions.IsteGelsinStepDef.kullaniciAlisveriseBaslaButonunaTiklar(IsteGelsinStepDef.java:81)
+	at ✽.Kullanici alisverise basla butonuna tiklar(file:///C:/Users/feyza2/IdeaProjects/IsteGelsinAutomation/src/test/resources/features/isteGelsin.feature:10)
+]]>
+        </failure>
+    </testcase>
+</testsuite>
